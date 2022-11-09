@@ -52,7 +52,7 @@ Gl4ES for Opengl renderer : https://github.com/ptitSeb/gl4es
 * Add setup all on-screen button opacity.
 * Support checking for update from GitHub.
 * Fixup some Quake 4 bugs:
-* Fixup collision, e.g. trigger, vehicle, AI, elevator, health-station. So fixed block on last elevator in level `game/mcc_landing` and fixed incorrect collision cause killing player on elevator in `game/process1 first` and `game/process1 second` and fixed block when player jumping form vehicle in `game/convoy1`. And cvar `harm_g_useSimpleTriggerClip` is removed.
+* Fixup collision, e.g. trigger, vehicle, AI, elevator, health-station. So fixed block on last elevator in level `game/mcc_landing` and fixed incorrect collision cause killing player on elevator in `game/process1 first` and `game/process1 second` and fixed block when player jumping form vehicle in `game/convoy1`. And cvar `AOS4_useSimpleTriggerClip` is removed.
 * Fixup game level load fatal error and crash in `game/mcc_1` and `game/tram1b`. So all levels have not fatal error now.
 * Add gyroscope control support.
 * Add reset onscreen buttton layout with fullscreen.
@@ -63,11 +63,11 @@ Gl4ES for Opengl renderer : https://github.com/ptitSeb/gl4es
 * Fixup AI `Singer` can not move when opening the door in level `game/building_b`.
 * Fixup jump down on broken floor in level `game/putra`.
 * Fixup player model choice and view in `Settings` menu in Multiplayer game.
-* Add bool cvar `harm_g_flashlightOn` for controling gun-lighting is open/close initial, default is 1(open).
-* Add bool cvar `harm_g_vehicleWalkerMoveNormalize` for re-normalize `vehicle walker` movment if enable `Smooth joystick` in launcher, default is 1(re-normalize), it can fix up move left-right.
+* Add bool cvar `AOS4_flashlightOn` for controling gun-lighting is open/close initial, default is 1(open).
+* Add bool cvar `AOS4_vehicleWalkerMoveNormalize` for re-normalize `vehicle walker` movment if enable `Smooth joystick` in launcher, default is 1(re-normalize), it can fix up move left-right.
 * Fixup Strogg health station GUI interactive in `Quake 4`.
 * Fixup skip cinematic in `Quake 4`.
-* If `harm_g_alwaysRun` is 1, hold `Walk` key to walk in `Quake 4`.
+* If `AOS4_alwaysRun` is 1, hold `Walk` key to walk in `Quake 4`.
 * Fixup level map script fatal error or bug in `Quake 4`(All maps have not fatal errors no longer, but have some bugs yet.).
 * `game/mcc_landing`: Player collision error on last elevator. You can jump before elevator ending or using `noclip`(Fixed in version 16).
 * `game/mcc_1`: Loading crash after last level ending. Using `map game/mcc_1` to reload(Fixed in version 16).
